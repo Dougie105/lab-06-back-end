@@ -71,6 +71,32 @@ app.get('/location', (request, response) => {
   response.send(locationData);
 });
 
+//Building a path to /weather
+app.get('/weather', (request, response) => {
+  const wetData = require('./data/darksky.json');
+  // const city = request.query.data;
+  // const weatherData = new Forecast(wetData);
+  let arr = [];
+  wetData.daily.data.forEach(value => {
+    let temp = new Forecast(value);
+    arr.push(temp);
+      // this.forecast = value.summary;
+      // this.time = value.time;
+      // arr.push(this);
+  });
+  response.send(arr);
+});
+
+function Forecast(each){
+  this.forecast = each.summary;
+  this.time = each.time;
+}
+
+// function Forecast(wetData){
+//   this.forecast = wetData.daily.data[i].summary;
+//   this.time = wetData.daily.data[i].time;
+// }
+
 function Location(city, geoData){
   this.search_query = city;
   this.formatted_query = geoData.results[0].formatted_address;
