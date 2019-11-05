@@ -1,59 +1,65 @@
 'use strict'
 
-var http = require("http");
+// var http = require("http");
 
 
-var fs = require('fs');
-var path = require('path');
-var mime = require('mime');
+// var fs = require('fs');
+// var path = require('path');
+// var mime = require('mime');
+
+// require('dotenv').config();
+// const express = require('express');
+// const app = express();
+
+// const PORT = process.env.PORT || 3000;
+
+// app.use(express.static('./public'));
 
 
+// function send404(response) {
+//   response.writeHead(404, {"Content-type" : "text/plain"});
+//   response.write("Error 404: resource not found");
+//   response.end();
+// }
 
+// function sendPage(response, filePath, fileContents) {
+//   response.writeHead(200, {"Content-type" : mime.lookup(path.basename(filePath))});
+//   response.end(fileContents);
+// }
 
-function send404(response) {
-  response.writeHead(404, {"Content-type" : "text/plain"});
-  response.write("Error 404: resource not found");
-  response.end();
-}
+// function serverWorking(response, absPath) {
+//   fs.exists(absPath, function(exists) {
+//     if (exists) {
+//       fs.readFile(absPath, function(err, data) {
+//         if (err) {
+//           send404(response)
+//         } else {
+//           sendPage(response, absPath, data);
+//         }
+//       });
+//     } else {
+//       send404(response);
+//     }
+//   });
+// }
 
-function sendPage(response, filePath, fileContents) {
-  response.writeHead(200, {"Content-type" : mime.lookup(path.basename(filePath))});
-  response.end(fileContents);
-}
+// var server = http.createServer(function(request, response) {
+//   var filePath = false;
 
-function serverWorking(response, absPath) {
-  fs.exists(absPath, function(exists) {
-    if (exists) {
-      fs.readFile(absPath, function(err, data) {
-        if (err) {
-          send404(response)
-        } else {
-          sendPage(response, absPath, data);
-        }
-      });
-    } else {
-      send404(response);
-    }
-  });
-}
+//   response.writeHead(200, {"Content-Type": "text/plain"});
 
-var server = http.createServer(function(request, response) {
-  var filePath = false;
+//   if (request.url == '/') {
+//     filePath = "/index.html";
+//   } else {
+//     filePath = request.url;
+//   }
 
-  response.writeHead(200, {"Content-Type": "text/plain"});
+//   var absPath = "./" + filePath;
 
-  if (request.url == '/') {
-    filePath = "/index.html";
-  } else {
-    filePath = request.url;
-  }
-
-  var absPath = "./" + filePath;
-
-  console.log('WOW I AM RUNNING')
-  serverWorking(response, absPath);
+//   console.log('WOW I AM RUNNING')
+//   serverWorking(response, absPath);
   
-}).listen(process.env.PORT || 3001);
+// }).listen(process.env.PORT || 3000);
 
 ////////////////////////////////////
 require('dotenv').config();
@@ -88,8 +94,10 @@ app.get('/weather', (request, response) => {
 });
 
 function Forecast(each){
+  let temp = new Date(each.time);
+  let tempScr = temp.toUTCString();
   this.forecast = each.summary;
-  this.time = each.time;
+  this.time = tempScr;
 }
 
 // function Forecast(wetData){
