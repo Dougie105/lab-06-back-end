@@ -15,10 +15,10 @@
 ## Change Log
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource.
+11-5-2019 1:30pm - Application now has a fully-functional express server, with a GET route for the location resource.
 
 ## Credits and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+Terrell Douglas, Stephen Koch
 -->
 
 Number and name of feature: Heroku Setup
@@ -50,17 +50,17 @@ Estimate of time needed to complete: 1hr
 
 Start time: 1035am
 
-Finish time: _____
+Finish time: 1155am
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1hr 20min
 
 
 Number and name of feature: 404 SETUP
 
 Estimate of time needed to complete: 1hr
 
-Start time: ____
+Start time: 1250pm
 
-Finish time: _____
+Finish time: 130pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 40min
