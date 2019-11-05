@@ -39,16 +39,16 @@ Estimate of time needed to complete: 1.5HRS
 
 Start time: 935am
 
-Finish time: _____
+Finish time: 1035am
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1hr
 
 
 Number and name of feature: WEATHER SETUP
 
 Estimate of time needed to complete: 1hr
 
-Start time: ____
+Start time: 1035am
 
 Finish time: _____
 
