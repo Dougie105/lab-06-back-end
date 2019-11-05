@@ -1,6 +1,6 @@
-# Project Name
+# City Explorer
 
-**Author**: Your Name Goes Here
+**Author**: Terrell Douglas, Stephen Koch
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
@@ -21,11 +21,45 @@
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 -->
 
-Number and name of feature: ________________________________
+Number and name of feature: Heroku Setup
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 5min
+
+Start time: 925
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+
+
+Number and name of feature: RETURN LOCATION DATA
+
+Estimate of time needed to complete: 1.5HRS
 
 Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+
+Number and name of feature: WEATHER SETUP
+
+Estimate of time needed to complete: 1hr
+
+Start time: ____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+
+Number and name of feature: 404 SETUP
+
+Estimate of time needed to complete: 1hr
+
+Start time: ____
 
 Finish time: _____
 
