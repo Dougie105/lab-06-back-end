@@ -1,20 +1,9 @@
 'use strict'
-
 // var http = require("http");
-
 
 // var fs = require('fs');
 // var path = require('path');
 // var mime = require('mime');
-
-// require('dotenv').config();
-// const express = require('express');
-// const app = express();
-
-// const PORT = process.env.PORT || 3000;
-
-// app.use(express.static('./public'));
-
 
 // function send404(response) {
 //   response.writeHead(404, {"Content-type" : "text/plain"});
@@ -59,7 +48,7 @@
 //   console.log('WOW I AM RUNNING')
 //   serverWorking(response, absPath);
   
-// }).listen(process.env.PORT || 3000);
+// }).listen(process.env.PORT || 3001);
 
 ////////////////////////////////////
 require('dotenv').config();
