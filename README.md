@@ -25,11 +25,11 @@ Number and name of feature: Heroku Setup
 
 Estimate of time needed to complete: 5min
 
-Start time: 925
+Start time: 925am
 
-Finish time: _____
+Finish time: 935am
 
-Actual time needed to complete: _____
+Actual time needed to complete: 10min
 
 
 
@@ -37,7 +37,7 @@ Number and name of feature: RETURN LOCATION DATA
 
 Estimate of time needed to complete: 1.5HRS
 
-Start time: _____
+Start time: 935am
 
 Finish time: _____
 
