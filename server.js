@@ -104,6 +104,6 @@ function Location(city, geoData){
   this.longitude = geoData.results[0].geometry.location.lng;
 }
 
-app.listen(PORT, () =>{
-  console.log(`listening on PORT ${PORT}`);
-});
+// app.listen(PORT, () =>{
+//   console.log(`listening on PORT ${PORT}`);
+// });
