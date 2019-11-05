@@ -83,7 +83,7 @@ app.get('/weather', (request, response) => {
 });
 
 function Forecast(each){
-  let temp = new Date(each.time);
+  let temp = new Date((each.time)*1000);
   let tempScr = temp.toUTCString();
   this.forecast = each.summary;
   this.time = tempScr;
