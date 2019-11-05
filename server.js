@@ -83,8 +83,10 @@ app.get('/weather', (request, response) => {
 });
 
 function Forecast(each){
+  let temp = new Date(each.time);
+  let tempScr = temp.toUTCString();
   this.forecast = each.summary;
-  this.time = each.time;
+  this.time = tempScr;
 }
 
 // function Forecast(wetData){
